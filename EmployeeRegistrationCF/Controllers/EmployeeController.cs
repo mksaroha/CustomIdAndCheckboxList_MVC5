@@ -141,7 +141,7 @@ namespace EmployeeRegistrationCF.Controllers
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult DeleteConfirmed(string id)
         {
             Employee employee = db.Employees.Find(id);
             db.Employees.Remove(employee);
