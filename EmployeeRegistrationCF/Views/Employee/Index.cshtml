@@ -63,8 +63,8 @@
         <td>
             @Html.ActionLink("Edit", "Edit", new { id = emp.Id }) |
             @Html.ActionLink("Details", "Details", new { id = emp.Id }) |
-            @*@Html.ActionLink("Delete", "Delete","", new { id = emp.Id ,@class="btn btn-danger"})*@
-            <a href="/Employee/Deleted?Id=@emp.Id" onclick="return confirm('do you want to delete this record !!')" class="btn btn-sm btn-danger"> Deleted</a>
+            @Html.ActionLink("Delete", "Delete", new { id = emp.Id })
+            @*<a href="/Employee/Deleted?Id=@emp.Id" onclick="return confirm('do you want to delete this record !!')" class="btn btn-sm btn-danger"> Deleted</a>*@
         </td>
     </tr>
 }
